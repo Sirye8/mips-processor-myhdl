@@ -1,5 +1,6 @@
 from myhdl import *
 from myhdlpeek.myhdl import Peeker
+import matplotlib.pyplot as plt
 
 with open('Instructions.txt', 'r', encoding='utf-8') as f:
     file_contents = f.read()
@@ -319,4 +320,5 @@ def top():
 sim = Simulation(top(), *Peeker.instances())
 sim.run()
 Peeker.show_waveforms(width=30, slope=0)
+plt.show()
 Peeker.clear()
