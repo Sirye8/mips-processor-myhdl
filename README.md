@@ -21,4 +21,4 @@ pip install myhdl myhdlpeek
 ```python
 python mips_processor.py
 ```
-3. View generated waveforms (`*.vcd` files) using MyHDLPeek.
+3. View generated waveforms (`*.vcd` files) using `myhdlpeek` and `matplotlib`.
